@@ -2,7 +2,7 @@
 Resets Margin/Padding on all elements to 0
 */
 
-* {
+*:not(dl,dt,dd) {
 	margin: 0px;
 	padding: 0px;
 }
@@ -42,6 +42,28 @@ body {
 }
 .alert {
 	background-color: red;
+}
+.fav-site {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	color: #0087ca;
+}
+.fav-site::after {
+	content: '';
+  	position: absolute;
+  	width: 100%;
+  	transform: scaleX(0);
+  	height: 2px;
+  	bottom: 0;
+  	left: 0;
+ 	background-color: #0087ca;
+  	transform-origin: bottom right;
+  	transition: transform 0.25s ease-out;
+}
+.fav-site:hover::after {
+	transform: scaleX(1);
+  	transform-origin: bottom left;
 }
 #nav {
 	background-color: #000;
