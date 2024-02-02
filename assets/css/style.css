@@ -1,0 +1,43 @@
+body{
+    background-color: #9D9CE0;
+}
+
+h1 {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 2.6rem;
+    width:fit-content;
+    margin:auto;
+    color:#D3D6E3;
+    background-color: #6800c3d0;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#assignments {
+}
+
+#assignments ul {
+}
+
+#assignments li {
+    list-style-type: none;
+    font-family: "Signika Negative", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+#assignments a {
+    display:block;
+    text-decoration: none;
+    background-color: #044DE0;
+    width:fit-content;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #D3D6E3;
+}
+
+#assignments a:hover {
+    box-shadow: 5px 5px #6800C3;
+}
