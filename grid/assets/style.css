@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+main {
+    width: 960px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    background-image: url(grid.png);
+}
+
+header.primary, footer.primary {
+    width:916px;
+    background: rgba(143, 48, 48, 0.4);
+    margin: 20px;
+    padding: 20px;
+    float:left;
+}
+
+#blog {
+    background: rgba(37, 60, 190, 0.4);
+    padding: 20px;
+    width: 604px;
+    margin-left:20px;
+    float:left;
+}
+
+aside {
+    background: rgba(50, 190, 37, 0.4);
+    width: 292px;
+    margin-left: 20px;
+    padding: 20px;
+    float:left;
+}
