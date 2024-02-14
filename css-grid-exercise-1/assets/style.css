@@ -19,8 +19,8 @@ main {
 }
 
 #content {
-    grid-column: 1 / 13;
-    grid-row: 2 / 3;
+    grid-column: 1 / span 12;
+    grid-row: 2;
     display:grid;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
@@ -28,29 +28,29 @@ main {
 
 footer.primary {
     background-color: rgba(94, 94, 94, 0.4);
-    grid-column: 1 / 13;
-    grid-row: 3 / 4;
+    grid-column: 1 / span 12;
+    grid-row: 3;
     padding:20px;
 }
 
 header.primary {
     background-color: rgba(143, 48, 48, 0.4);
-    grid-column: 1 / 13;
-    grid-row: 1 / 2;
+    grid-column: 1 / span 12;
+    grid-row: 1;
     padding:20px;
 }
 
 #blog {
     background-color: rgba(37, 60, 190, 0.4);
-    grid-column: 1 / 8;
-    grid-row: 2 / 3;
+    grid-column: 1 / span 7;
+    grid-row: 2;
     padding:20px;
 }
 
 aside {
     background-color: rgba(50, 190, 37, 0.4);
-    grid-column: 8 / 13;
-    grid-row: 2 / 3;
+    grid-column: 8 / span 12;
+    grid-row: 2;
     padding:20px;
 }
 
