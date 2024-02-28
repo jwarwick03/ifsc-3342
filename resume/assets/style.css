@@ -3,7 +3,8 @@
 :root{
     --main-bg-color: #222;
     --primary-type-color: #F5EFDF;
-    --accent-color: #A09DFF;
+    --accent-color-1: #aaa;
+    --accent-color-2: #A09DFF;
 }
 
 html {
@@ -57,13 +58,39 @@ a:visited {
   color: var(--primary-type-color);
 }
 
+/* ------- Nav Hover Animation ------*/
+.underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--accent-color-2);
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color-2);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 nav {
     padding: 1px;
 }
 
 nav ul {
+    padding:0;
     display:flex;
-
+    justify-content: space-evenly;
 }
 
 nav li {
@@ -72,11 +99,95 @@ nav li {
 }
 
 nav a:link, nav a:visited {
+    display:block;
+    text-decoration: none;
     
 }
+
+main {
+    padding: 1px 20px;
+  }
 
 main h1 {
     font-family: "Days One", sans-serif;
     text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+    background-image: linear-gradient(to left, var(--accent-color-2), var(--primary-type-color));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
+h2 {
+    border-left: 5px solid var(--accent-color-1);
+    padding-left: 8px;
+    border-radius: 6px;
+}
+
+dl {
+    display:grid;
+    grid-template: repeat(8, auto) / 8em 1fr;
+    font-size: .9rem;
+}
+
+dt {
+    font-weight: 800;
+    grid-column: 1;
+    padding: 10px 0;
+    color: var(--primary-type-color);
+    border-bottom: 1px solid var(--accent-color-1);
+  }
+  dd {
+    margin: 0;
+    grid-column: 2;
+    padding: 10px 0;
+    color: var(--accent-color-1);
+    border-bottom: 1px solid var(--accent-color-1);
+  }
+
+  .related-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap:20px;
+    margin: 25px 0;
+  }
+
+  .related-links a {
+    border: 2px solid var(--accent-color-2);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75em;
+  }
+
+  #skills li {
+    list-style-type: square;
+  }
+  
+  .job,
+  .certificate {
+    border-bottom: 1px solid var(--accent-color-1);
+    padding-bottom: 20px;
+  }
+  
+  .job *[itemprop="jobTitle"],
+  .job *[itemprop="name"],
+  .job *[itemprop="url"],
+  .job *[itemprop="addressLocality"],
+  .certificate *[itemprop="name"] {
+    display: block;
+  }
+
+  
+  .job h3 {
+    margin: 20px 0 0 0;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
