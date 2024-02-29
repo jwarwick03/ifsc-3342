@@ -104,9 +104,36 @@ nav a:link, nav a:visited {
     
 }
 
+.page-title {
+  grid-area: title;
+}
+
+#about {
+  grid-area: about;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#experience {
+  grid-area: experience;
+}
+
+#education {
+  grid-area: education;
+}
+
 main {
-    padding: 1px 20px;
-  }
+  padding: 1px 20px;
+  display:grid;
+  grid-template-areas: 
+  "title"
+  "about"
+  "skills"
+  "education"
+  "experience";
+}
 
 main h1 {
     font-family: "Days One", sans-serif;
@@ -120,10 +147,12 @@ main h1 {
 }
 
 h2 {
-    border-left: 5px solid var(--accent-color-1);
+    border-left: 6px solid var(--accent-color-2);
+    background-color: #a09dff33;
     padding-left: 8px;
     border-radius: 6px;
 }
+
 
 dl {
     display:grid;
@@ -146,6 +175,11 @@ dt {
     border-bottom: 1px solid var(--accent-color-1);
   }
 
+  dd a {
+    text-decoration: none;
+    color: var(--accent-color-1);
+  }
+
   .related-links {
     display: flex;
     justify-content: center;
@@ -162,6 +196,11 @@ dt {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.75em;
+    transition: .3s;
+  }
+
+  .related-links a:hover {
+    border-radius: 10px;
   }
 
   #skills li {
@@ -172,6 +211,10 @@ dt {
   .certificate {
     border-bottom: 1px solid var(--accent-color-1);
     padding-bottom: 20px;
+  }
+
+  .no-border-bottom {
+    border:none;
   }
   
   .job *[itemprop="jobTitle"],
