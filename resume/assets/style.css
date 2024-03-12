@@ -236,8 +236,9 @@ footer {
     grid-template-areas: 
     "title title"
     "about about"
-    "skills education"
-    "...... experience";
+    "skills skills"
+    "experience education";
+    gap: 20px;
   }
 
   /*Nested Grid*/
@@ -264,13 +265,81 @@ footer {
     padding-bottom: 50px;
   }
 
-  #skills{
-    padding-right: 20px;
+  /* ------- Skills Section ------- */
+  .skills {
+    width:100%;
+    max-width:600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+    text-transform:uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar {
+    height:14px;
+    background-color: #282828;
+    border-radius: 3px;
+  }
+  
+  .skill-per {
+    height:14px;
+    background-color: #8a9fff;
+    border-radius:3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  
+  .skill-per::before {
+    content: attr(per);
+    color:#222;
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after {
+    content: "";
+    position: absolute;
+    width:10px;
+    height:10px;
+    background: #f1f1f1;
+    top:-15px;
+    right:0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  @keyframes fillBars {
+    from{
+      width:0;
+    }
+    to{
+      width:100%;
+    }
   }
 
   dl{
     grid-template: repeat(8, auto) / 8em 1fr;
   }
+
+}
+
+@media screen and (min-width: 992px){
+
+  .container {
+    width: 980px;
+  }
+
+  
+
 
 
 
