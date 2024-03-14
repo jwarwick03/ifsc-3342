@@ -184,7 +184,6 @@ dd a {
   list-style: none;
   padding: 0;
   gap:50px;
-  margin: 25px 0;
 }
 .related-links a {
   text-align: center;
@@ -192,6 +191,11 @@ dd a {
   text-transform: uppercase;
   font-size: 1.6em;
 }
+
+#skills h2 {
+  margin-top:0;
+}
+
 #skills li {
   list-style-type: square;
 }
@@ -228,7 +232,7 @@ footer {
 @media screen and (min-width: 768px){
 
   .container {
-    width: 680px;
+    width: 80%;
   }
 
   main.container {
@@ -259,10 +263,19 @@ footer {
     grid-area:details;
   }
 
+  h2 {
+    background-color: var(--main-bg-color);
+  }
+
   .related-links{
     grid-area:related;
     border-bottom: 1px solid var(--accent-color-1);
-    padding-bottom: 50px;
+    margin-bottom:20px 0;
+    padding-bottom: 20px;
+  }
+
+  #skills {
+    margin-bottom:20px;
   }
 
   /* ------- Skills Section ------- */
@@ -335,10 +348,16 @@ footer {
 @media screen and (min-width: 992px){
 
   .container {
-    width: 980px;
+    width: 80%;
   }
 
-  
+  #about img, p {
+    gap: 40px;
+  }
+
+  section {
+    margin: 0 40px;
+  }
 
 
 
