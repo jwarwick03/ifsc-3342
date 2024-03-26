@@ -1,5 +1,12 @@
+:root {
+    --main-bg-color: #222;
+    --primary-type-color: #EFF1F3;
+    --header-color: #7E78D2;
+    --accent-color: #272727;
+}
+
 body{
-    background-color: #9D9CE0;
+    background-color: var(--main-bg-color);
 }
 
 h1 {
@@ -7,11 +14,10 @@ h1 {
     font-size: 2.6rem;
     width:fit-content;
     margin:auto;
-    color:#D3D6E3;
-    background-color: #4d4d4dd0;
+    color: var(--header-color);
     padding: 20px 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 main {
@@ -23,27 +29,29 @@ main {
 #assignments ul {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:10px;
-}
+    gap:20px;
 
-#assignments li {
-    list-style-type: none;
-    font-family: "Signika Negative", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 800;
-}
+    li {
+        list-style-type: none;
+        font-family: "Signika Negative", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
 
-#assignments a {
-    display:block;
-    text-decoration: none;
-    background-color: #3666c7;
-    padding: 50px 20px;
-    border-radius: 10px;
-    color: #D3D6E3;
-}
+    a {
+        display:block;
+        text-decoration: none;
+        color: var(--primary-type-color);
+        background-color: var(--accent-color);
+        padding: 50px 20px;
+        border-radius: 10px;
+    }
 
-#assignments a:hover {
-    box-shadow: 5px 5px #6800C3;
+    a:hover {
+        box-shadow: 2px 2px var(--primary-type-color);
+    }
+
+
 }
 
 @media screen and (max-width: 600px) {
