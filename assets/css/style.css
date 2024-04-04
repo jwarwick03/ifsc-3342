@@ -51,7 +51,6 @@ main {
         box-shadow: 2px 2px var(--primary-type-color);
     }
 
-
 }
 
 @media screen and (max-width: 600px) {
