@@ -1,0 +1,157 @@
+:root {
+    --main-bg-color: #e6ebe0;
+    --primary-type-color: #222;
+    --accent: #5ca4a9;
+    --accent-strong: #3626a7;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin:0;
+    padding:0;
+    font-family: "Hammersmith One", sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--primary-type-color);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  main {
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  #header {
+    height: 30vh;
+    position: relative;
+  
+    h1 {
+      padding-left: 20px;
+      position: absolute;
+      top: 30%;
+      color: var(--accent-strong);
+      font-family: "Dela Gothic One", sans-serif;
+      font-size: 1.8rem;
+      z-index: 2;
+    }
+    h2 {
+      padding-left: 35px;
+      position: absolute;
+      top: 40%;
+      color: var(--accent);
+      font-size: 1.7rem;
+      z-index: 1;
+    }
+  }
+  
+  /* ------- NavBar ------- */
+  nav {
+    height: 60px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+  
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--main-bg-color);
+    
+      height: auto;
+      width:100%;
+      padding: 20px 30px;
+      justify-content: flex-start;
+    }
+    a:hover {
+      color: var(--accent);
+    }
+  
+    .logo {
+      width:fit-content;
+      margin-right: auto;
+    }
+  
+    svg {
+      fill: var(--main-bg-color);
+    }
+  }
+  
+  .links-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 10;
+    width: 300px;
+  
+    background-color: var(--primary-type-color);
+    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+  
+  }
+  
+  #sidebar-active {
+    display: none;
+  }
+  
+  .open-sidebar-button, .close-sidebar-button{
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+  }
+  #sidebar-active:checked ~ .links-container {
+    display: flex;
+  }
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9;
+  }
+
+/* ---- Wave SVG ---- */
+.custom-shape-divider-top-1712608948 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+.custom-shape-divider-top-1712608948 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+.custom-shape-divider-top-1712608948 .shape-fill {
+    fill: #000000;
+}
+
+#intro h2 {
+    font-size: 1.2rem;
+}
+#intro p {
+    font-size: .9rem;
+}
