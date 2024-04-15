@@ -2,7 +2,7 @@
     --main-bg-color: #e6ebe0;
     --primary-type-color: #222;
     --accent: #5ca4a9;
-    --accent-strong: #3626a7;
+    --accent-strong: #1098F7;
   }
   
   html {
@@ -28,6 +28,10 @@
   
   img {
     max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
   }
   
   main {
@@ -57,8 +61,6 @@
       padding-left: 35px;
       position: absolute;
       top: 40%;
-      color: var(--accent);
-      font-size: 1.7rem;
       z-index: 1;
     }
   }
@@ -157,10 +159,6 @@
   margin: 20px 0;
   border-top: 2px solid #00000021;
   border-bottom: 2px solid #00000021;
-
-  h2 {
-    font-size: 1.2rem;
-  }
 }
 
 #pros-cons {
@@ -169,4 +167,20 @@
   ul {
     padding: 0 20px;
   }
+}
+
+.card {
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+  .card-txt {
+    padding: 10px;
+  }
+}
+
+h2.routine {
+  color: var(--accent-strong);
+  font-size: 1.8rem;
+  margin-bottom: 0;
 }
