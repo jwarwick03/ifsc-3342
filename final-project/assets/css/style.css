@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #e6ebe0;
     --primary-type-color: #222;
-    --accent: #5ca4a9;
+    --accent: #85756E;
     --accent-strong: #1098F7;
   }
   
@@ -55,19 +55,18 @@
       color: var(--accent-strong);
       font-family: "Dela Gothic One", sans-serif;
       font-size: 1.8rem;
-      z-index: 2;
     }
     h2 {
+      color: var(--primary-type-color);     
       padding-left: 35px;
       position: absolute;
-      top: 40%;
-      z-index: 1;
+      top: 45%;
     }
   }
   
   /* ------- NavBar ------- */
   nav {
-    height: 60px;
+    height: 70px;
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -149,16 +148,20 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 73px;
+    height: 95px;
 }
 .custom-shape-divider-top-1712608948 .shape-fill {
     fill: #000000;
 }
 
-#intro {
+#intro { 
   margin: 20px 0;
-  border-top: 2px solid #00000021;
-  border-bottom: 2px solid #00000021;
+  border-top: 2px solid var(--primary-type-color);
+  border-bottom: 2px solid var(--primary-type-color);
+
+  h2 {
+    color:var(--accent);
+  }
 }
 
 #pros-cons {
@@ -170,7 +173,7 @@
 }
 
 .card {
-  border: 2px solid var(--accent);
+  background-color: var(--accent);
   border-radius: 8px;
   margin-bottom: 15px;
 
@@ -179,8 +182,27 @@
   }
 }
 
-h2.routine {
-  color: var(--accent-strong);
-  font-size: 1.8rem;
-  margin-bottom: 0;
+#ppl-routine {
+  border-top: 2px solid var(--primary-type-color);
+
+  h2 {
+    padding-left: 16px;
+  }
+  h2.routine {
+    color: var(--accent-strong);
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  p{text-align:center;}
+}
+
+
+footer {
+  background-color: var(--accent);
+  height: 80px;
+}
+#copyright {
+
 }
