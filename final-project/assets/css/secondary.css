@@ -165,76 +165,6 @@
   p{margin-bottom: 30px;}
 }
 
-#pros-cons {
-  background-color: var(--primary-type-color);
-  color: var(--main-bg-color);
-  margin-bottom: 40px;
-  padding: 20px;
-  position:relative;
-  z-index: 10;
-
-  .pros h2 {
-    padding-top: 90px;
-  }
-}
-.custom-shape-divider-top-1714249598 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: -1;
-}
-
-.custom-shape-divider-top-1714249598 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 120px;
-}
-
-.custom-shape-divider-top-1714249598 .shape-fill {
-  fill: var(--main-bg-color);
-}
-
-
-.card {
-  background-color: var(--accent);
-  border-radius: 8px;
-  margin-bottom: 15px;
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 40px;
-
-  .card-txt {
-    padding: 10px;
-    padding-left: 20px;
-  }
-  img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-
-  }
-}
-
-#ppl-routine {
-  border-top: 2px solid var(--primary-type-color);
-  margin-bottom: 40px;
-
-  h2 {
-    padding-left: 16px;
-  }
-  h2.routine {
-    color: var(--accent-strong);
-    font-size: 1.7rem;
-    text-align: center;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-  p{text-align:center;}
-}
-
 
 footer {
   background-color: var(--accent);
@@ -255,38 +185,7 @@ footer {
     margin-left: 20px;
   }
 
-  .card {
-    height: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 150px;
-
-    img {
-      grid-column: 2;
-      grid-row: 1 / span 2;
-      border-top-left-radius: 0;
-      border-bottom-right-radius: 8px;
-    }
-    .card-txt {
-      text-align: left;
-      padding-left: 40px;
-    }
-    h3 {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    ul {
-      grid-column: 1;
-      grid-row: 2;
-    }
-
-  }
-
-  .routine-list {
-    width: 300px;
-    margin: auto;
-  }
+  
 
 }
 
@@ -332,47 +231,7 @@ footer {
     margin-right: auto;
   }
 
-  #pros-cons {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 40px;
-
-
-    .pros{
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .cons{
-      grid-column: 2;
-      grid-row: 1;
-
-      h2 {padding-top: 90px;}
-    }
-  }
-
-  #cards {
-    display: flex;
-
-
-    .card {
-      height: fit-content;
-      grid-template-rows: 1fr 200px;
-      gap: 0;
   
-      img {
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 8px;
-        grid-column: 1 / span 2;
-        grid-row: 1;
-      }
-      .card-txt {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-        padding-left: 20px;
-      }
-    }
-}
  
 
 }
