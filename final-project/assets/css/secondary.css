@@ -47,7 +47,9 @@
     padding-bottom: 20px;
   }
 
-  .align-right {text-align: right;}
+  .bottom {
+    margin-bottom: 50px;
+  }
   
   #header {
     height: 45vh;
@@ -168,12 +170,25 @@
 
 
 #intro { 
-  margin: 0;
+  margin: 40px 0;
   border-top: 2px solid var(--primary-type-color);
   border-bottom: 2px solid var(--primary-type-color);
 
   p{margin-bottom: 30px;}
 }
+
+#workout-splits {
+
+a {
+  color: var(--primary-type-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-strong);
+}
+li {list-style-type: none;}
+}
+
 
 
 footer {
@@ -215,6 +230,11 @@ footer {
     margin:auto;
   }
 
+  #intro {
+    max-width: 80vw;
+    margin: auto;
+  }
+
   nav.primary .open-sidebar-button,
   .close-sidebar-button {
     display: none;
@@ -251,13 +271,19 @@ footer {
     margin-right: auto;
   }
 
-  #header{height: 65vh;}
-  #header h1 {
-    left: 10%;
+  #header {
+    height: 70vh;
+
+    h1 {left: 10%;}
+    img {
+      width: 500px;
+      left: 50%;
+    }
+
   }
-  #header img {
-    width: 500px;
-    left: 50%;
+
+  #crossfit-workouts {
+    margin-top: 40px;
   }
 
   .container li {
