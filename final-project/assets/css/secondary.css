@@ -189,6 +189,10 @@ a:hover {
 li {list-style-type: none;}
 }
 
+.exercise img{
+  margin-left: 40px;
+}
+
 
 
 footer {
@@ -288,6 +292,21 @@ footer {
 
   .container li {
     max-width: 600px;
+  }
+
+  .exercise {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+
+    h3, ol {
+      grid-column: 1;
+    }
+    img{
+      grid-column: 2;
+    }
+
+    
   }
  
 

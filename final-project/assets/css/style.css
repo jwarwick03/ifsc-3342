@@ -249,6 +249,12 @@
   }
 }
 
+.video {
+  margin-top: 40px;
+  width:fit-content;
+  margin:auto;
+}
+
 
 footer {
   background-color: var(--accent);
